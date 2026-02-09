@@ -247,6 +247,10 @@
 									/>
 								</div>
 							{/if}
+							<div class="mb-4 flex justify-center">
+								<img src="/static/splash-dark.png" alt="" class="max-w-full h-auto" />
+							</div>
+
 							<form
 								class=" flex flex-col justify-center"
 								on:submit={(e) => {
@@ -261,7 +265,7 @@
 										{:else if mode === 'ldap'}
 											{$i18n.t(`Sign in to {{WEBUI_NAME}} with LDAP`, { WEBUI_NAME: $WEBUI_NAME })}
 										{:else if mode === 'signin'}
-											{$i18n.t(`Sign in to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
+											{$i18n.t(`Sign in`, { WEBUI_NAME: $WEBUI_NAME })}
 										{:else}
 											{$i18n.t(`Sign up to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
 										{/if}
